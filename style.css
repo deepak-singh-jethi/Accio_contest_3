@@ -2,7 +2,12 @@
    
     box-sizing: border-box !important;
 }
-
+/* .navbar{
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 10;
+    width: 100vw;
+} */
 .navbar-brand{
     font-size: 2rem;
 }
@@ -110,7 +115,7 @@
 /* link-section */
 
 .link-section{
-    width: 82vw;
+    width: 80vw;
     margin-inline: auto;
     margin-block: 100px;
 }
@@ -128,6 +133,6 @@
 
 
 .copyright-section{
-        width: 81vw;
+        width: 80vw;
         margin-inline: auto;
 }

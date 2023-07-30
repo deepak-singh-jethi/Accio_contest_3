@@ -1,13 +1,10 @@
 *{
+    margin: 0;
+    padding: 0;
    
     box-sizing: border-box !important;
 }
-/* .navbar{
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 10;
-    width: 100vw;
-} */
+
 .navbar-brand{
     font-size: 2rem;
 }
@@ -38,58 +35,67 @@
     display: grid;
     width: 82vw;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: 150px 150px 300px;
+    grid-template-areas: "a1 a1 a2 a3 a4 a4"
+                         "a1 a1 a5 a6 a7 a7"
+                        " a8 a8 a9 a9 a9 a9";
     gap: 10px;
     margin-inline: auto;
 }
 
 
-.grid-img{
-   object-fit:cover ;
-   max-height: 100% ;
-   width: auto ;
+box-grid>img{
+ height: 100%;
+ width: 100%;
 }
 
-
-
+.box-grid{
+    overflow: hidden;
+    object-fit: cover;
+}
 
 
 
 .box-1{
-    grid-row: 1/ sapn 2;
-    grid-column: 1/ span 2;
+   
+    grid-area: a1;
    
 }
 .box-2{
-    grid-column: 3/ span 1;
+   
+    grid-area: a2;
 }
 .box-3 {
-    grid-column: 4/ span 1;
+ 
+    grid-area: a3;
 }
 .box-4{
-    grid-column: 5/ span 2;
-    height:100%;
+  
+    grid-area: a4;
 }
 
 .box-5 {
-    grid-column: 3/ span 1;
+  
+    grid-area: a5;
   
 }
 .box-6 {
-    grid-column: 4/ span 1;
+  
+    grid-area: a6;
   
 }
 .box-7{
-    grid-column: 5/span 2;
+  
+    grid-area: a7;
 }
 .box-8{
-    grid-column: 1/ span 2;
-    grid-row: 3/span 2;
+  
+    grid-area: a8;
     
 }
 .box-9{
-    grid-column: 3/ span 4;
-    grid-row: 3/ span 2;
+ 
+    grid-area: a9;
 }
 
 
